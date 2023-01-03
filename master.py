@@ -45,7 +45,7 @@ for item in big_data['Data']:
     item_highday = float(item_highday)
     item_entrydate = item['CoinInfo']['AssetLaunchDate']
     item_entrydate = str(item_entrydate)
-    df1 = pd.DataFrame({'item_fullname':item_fullname, 'item_name':item_name, 'item_price':item_price, 'item_lowday':item_lowday, 'item_highday':item_highday, 'item_entrydate':item_entrydate},ignore_index=True)
+    df1 = pd.DataFrame({'item_fullname':item_fullname, 'item_name':item_name, 'item_price':item_price, 'item_lowday':item_lowday, 'item_highday':item_highday, 'item_entrydate':item_entrydate}, ignore_index=True)
     df = pd.concat([df,df1])
     print(f"Nazwa kryptowaluty: {item_fullname}")
     print(f"Oznaczenie kryptowaluty: {item_name}")
